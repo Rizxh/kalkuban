@@ -1,11 +1,9 @@
 import streamlit as st
 import math
-from streamlit_option_menu import option_menu
 
 # Navigasi Sidebar
 with st.sidebar:
-    selected = option_menu('Hitung Luas Bangun', ['Hitung Luas & Keliling Persegi Panjang', 'Hitung Luas & Keliling Persegi', 'Hitung Luas & Keliling Segitiga', 'Hitung Luas & Keliling Jajar Genjang', 'Hitung Luas & Keliling Trapesium', 'Hitung Luas & Keliling Layang-Layang', 'Hitung Luas & Keliling Belah Ketupat', 'Hitung Luas & Keliling Lingkaran'], default_index=0)
-
+    selected = st.radio('Hitung Luas Bangun', ('Hitung Luas & Keliling Persegi Panjang', 'Hitung Luas & Keliling Persegi', 'Hitung Luas & Keliling Segitiga', 'Hitung Luas & Keliling Jajar Genjang', 'Hitung Luas & Keliling Trapesium', 'Hitung Luas & Keliling Layang-Layang', 'Hitung Luas & Keliling Belah Ketupat', 'Hitung Luas & Keliling Lingkaran'))
 # Halaman Persegi Panjang
 if (selected == 'Hitung Luas & Keliling Persegi Panjang'):
     st.title("Hitung Luas & Keliling Persegi Panjang")
